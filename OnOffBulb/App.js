@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, Image, Text, Switch, StyleSheet} from 'react-native';
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
-
+//1. I imported the necessary modules such as View,Image, Text
 
 const App = () => {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -18,6 +18,8 @@ const App = () => {
     height: 200,
     width: 200,
   };
+
+  //2.I created two const for Images, with their corresponding URL,height and width
 
 
   return (
@@ -40,7 +42,8 @@ const App = () => {
     </SafeAreaProvider>
   );
 };
-
+//3. I also add the View and Text inside the SafeAreaView
+//4. I add some ternary conditions with the same logic from the original effects of "isEnabled"
 const styles = StyleSheet.create({
   container: {
     flex: 1,
